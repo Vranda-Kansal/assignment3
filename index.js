@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 
-app.use("/doctor/list/:city", route);
+app.use("/doctor/list/delhi", route);
 
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
