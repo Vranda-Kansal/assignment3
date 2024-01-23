@@ -5,7 +5,7 @@ export const getDoctorList = (req, res) => {
     const selectedCity = req.params.city;
     // console.log(selectedCity);
     const list = DoctorList.filter((doctor) => doctor.city === selectedCity);
-    return res.status(200).json(list);
+    return res.send(list);
   } catch (err) {
     return res.status(500).json(err.message);
   }
