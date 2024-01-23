@@ -9,11 +9,11 @@ dotenv.config();
 const app = express();
 app.use(cors());
 
-app.use("/", route);
+app.use("/doctor/list/:city", route);
 
-// app.get("/", (req, res) => {
-//   res.send("Express on Vercel");
-// });
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
 
 const port = 8001;
 
