@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import route from "./routes/route.js";
 import dotenv from "dotenv";
+import { DoctorList } from "./utils/constants.js";
 
 dotenv.config();
 
