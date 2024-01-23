@@ -12,7 +12,7 @@ app.use(cors());
 app.get("/doctor/list/:city", (req, res) => {
   try {
     const selectedCity = req.params.city;
-    // console.log(selectedCity);
+    console.log(selectedCity);
     const list = DoctorList.filter((doctor) => doctor.city === selectedCity);
     console.log(list);
     return res.status(200).json(list);
