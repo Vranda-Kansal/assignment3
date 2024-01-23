@@ -11,9 +11,9 @@ app.use(cors());
 
 app.use("/", route);
 
-app.get("/", (req, res) => {
-  res.send("Express on Vercel");
-});
+// app.get("/", (req, res) => {
+//   res.send("Express on Vercel");
+// });
 
 const port = 8001;
 
